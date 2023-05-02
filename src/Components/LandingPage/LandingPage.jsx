@@ -105,10 +105,9 @@ export function LandingPage() {
   }
 
   let text = [
-    "Game night?",
+    "It's Friday Evening",
+    "It’s 5:30 pm and it’s time to decide where to have dinner",
     "Cooking Gone Wrong?",
-    "Late night at office?",
-    "Movie marathon?",
     "Unexpected guests?",
     "Hungry?",
   ];
@@ -490,7 +489,14 @@ export function LandingPage() {
         <div className="left">
           <div className="check0">
             <div>
-              <img src="https://d1ye2ocuext585.cloudfront.net/images/s/Swiggy_Logo_9.png" />
+            <img
+            style={{
+              width: "200px",
+              height: "100%",
+           
+            }}
+            src="https://s3-us-west-2.amazonaws.com/cbi-image-service-prd/modified/419d634b-ce89-44bb-95cb-6fffbdb2878a.png"
+          />
             </div>
 
             <div className="hing">
@@ -519,31 +525,7 @@ export function LandingPage() {
             </div>
           </div>
           <Animation />
-          <div className="trip" id="appending">
-            <div className="check">
-              <input
-                className="chinu"
-                id="inputt"
-                type="text"
-                placeholder="Enter your delivery location"
-                autoFocus={true}
-                spellCheck={false}
-                onChange={(e) => setQuery(e.target.value)}
-                value={isLoading ? "Fetching your current location..." : query}
-              />
-
-              <button className="posey" onClick={geoLocation}>
-                <i className="far fa-location" /> Locate Me
-              </button>
-
-              <button onClick={check} id="changing" value="toogle_food">
-                {isLoading ? <LoadingSpinner /> : "Find Food"}
-              </button>
-            </div>
-          </div>
-          <div className="trip1" style={{ display: query ? "" : "none" }}>
-            Please add your delivery location
-          </div>
+         
           <article
             className="suggestion"
             style={{
@@ -593,15 +575,7 @@ export function LandingPage() {
         </div>
 
         <div className="right">
-          <img
-            style={{
-              width: "755px",
-              height: "100%",
-              objectFit: "cover",
-              objectPosition: "-3px -27px",
-            }}
-            src="https://web.archive.org/web/20210903175246im_/https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_1340/Lunch1_vlksgq"
-          />
+         
         </div>
       </div>
       <div className="two">
@@ -635,38 +609,24 @@ export function LandingPage() {
             <br /> your pocket
           </h1>
           <p>
-            Order from your favorite restaurants & track on the go, with the
-            all-new Swiggy app.
+            Visit Your Favourite Restuarants 
           </p>
           <div className="do1">
-            <a href="https://play.google.com/store/apps/details?id=in.swiggy.android">
+            <a href="https://play.google.com/store/search?q=lighthall&c=apps">
               <img
                 style={{ height: "54px" }}
                 src="https://web.archive.org/web/20210903175340im_/https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/play_ip0jfp"
               />
             </a>
-            <a href="https://itunes.apple.com/in/app/swiggy-food-order-delivery/id989540920">
-              <img
-                style={{ height: "54px" }}
-                src="https://web.archive.org/web/20210903175341im_/https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_108/iOS_ajgrty"
-              />
-            </a>
+            
           </div>
         </div>
         <div className="do2">
           <div>
-            <img
-              className="set"
-              src="https://web.archive.org/web/20210903175342im_/https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_768,h_978/pixel_wbdy4n"
-              alt=""
-            />
+           
           </div>
           <div>
-            <img
-              className="set1"
-              src="https://web.archive.org/web/20210903175343im_/https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_768,h_978/iPhone_wgconp_j0d1fn"
-              alt=""
-            />
+           
           </div>
         </div>
       </div>
@@ -675,11 +635,11 @@ export function LandingPage() {
       <footer>
         <img
           className="footer_logo"
-          src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_284/Logo_f5xzza"
-          width="200px"
+          src="data:image/png;base64,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"
+          width="100px"
           height="60px"
         />
-        <p style={{ color: "white", fontSize: "21px" }}>&copy; 2022 Swiggy</p>
+        <p style={{ color: "white", fontSize: "21px" }}>&copy; 2023 Restuarant </p>
         <div
           style={{
             width: "200px",

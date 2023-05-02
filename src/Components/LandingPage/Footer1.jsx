@@ -9,11 +9,7 @@ function Footer1() {
               <div className="div1_list_p1">About Us</div>
               <div className="div1_list_p1">Team</div>
               <div className="div1_list_p1">Careers</div>
-              <div className="div1_list_p1">Swiggy Blog</div>
-              <div className="div1_list_p1">Bug Bounty</div>
-              <div className="div1_list_p1">Swiggy One</div>
-              <div className="div1_list_p1">Swiggy Corporate</div>
-              <div className="div1_list_p1">Swiggy Instamart</div>
+           
           </div>
             </div>
             <div className="div2">
@@ -36,10 +32,9 @@ function Footer1() {
           </div>
             </div>
             <div className="div4">
-            <div><a href="https://play.google.com/store/apps/details?id=in.swiggy.android"><img className="foot_icon" style={{ width: "200px", height: "65px" }} src="https://web.archive.org/web/20210903174711im_/https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200,h_65/icon-AppStore_lg30tv" /></a></div>
-                
+             
 
-            <div><a href="https://itunes.apple.com/in/app/swiggy-food-order-delivery/id989540920"><img className="foot_icon" style={{width:"200px",height:"65px"}} src="https://web.archive.org/web/20210903174711im_/https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200,h_65/icon-GooglePlay_1_zixjxl"/></a></div>
+            <div><a href="https://play.google.com/store/search?q=lighthall&c=apps"><img className="foot_icon" style={{width:"200px",height:"65px"}} src="https://web.archive.org/web/20210903174711im_/https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_200,h_65/icon-GooglePlay_1_zixjxl"/></a></div>
             </div>
             {/* <hr className='hr_line'/> */}
             </main>

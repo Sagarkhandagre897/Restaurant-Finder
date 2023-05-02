@@ -5,7 +5,7 @@ import Button from "@mui/material/Button";
 import "./PaymentDetails.css";
 import Veg from "../Assets/veg.jpg";
 import NonVegan from "../Assets/NonVeg.jpg";
-import { Navbar } from "../RestaurantPage/Navbar";
+import { Navbar } from "../RestaurantPage/navbar";
 import { Address } from "./Address";
 import Coupoun from "../Assets/coupon.jpg";
 import Coupoun_2 from "../Assets/coupon_2.jpg";

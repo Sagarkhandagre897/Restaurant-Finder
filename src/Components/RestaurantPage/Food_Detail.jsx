@@ -3,7 +3,7 @@ import OfferImg from "../Assets/offerImg.jpg";
 import Veg from "../Assets/veg.jpg";
 import NonVegan from "../Assets/NonVeg.jpg";
 import "./Food_Detail.css";
-import { Navbar } from "./Navbar";
+import { Navbar } from "./navbar";
 import Backdrop from "@mui/material/Backdrop";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";

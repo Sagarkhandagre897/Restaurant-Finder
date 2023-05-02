@@ -8,7 +8,7 @@ import { data } from "../../restaurantData";
 import Discount from "../Assets/discount.svg";
 import CloseIcon from "@mui/icons-material/Close";
 import { Drawer, Box } from "@mui/material";
-import { Navbar } from "./Navbar";
+import { Navbar } from "./navbar";
 import ScrollToTop from "react-scroll-to-top";
 import { useWindowScroll } from "react-use";
 import { useNavigate } from "react-router-dom";
