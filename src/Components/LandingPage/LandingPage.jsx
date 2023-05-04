@@ -9,6 +9,9 @@ import Footer2 from "./Footer2";
 import { cities } from "../../data";
 import { useNavigate } from "react-router-dom";
 import Firebase from "../../Firebase";
+import "react-phone-number-input/style.css";
+import PhoneInput from "react-phone-number-input";
+
 let id;
 function Card(props) {
   return (
@@ -228,7 +231,7 @@ export function LandingPage() {
     let user = JSON.parse(localStorage.getItem("user_details"));
     if (user.name !== "" || user.email !== "" || user.number !== "") {
       configureCaptcha_signIn();
-      const phoneNumber = "+91" + number;
+      const phoneNumber = number;
       const appVerifier = window.recaptchaVerifier;
       Firebase.auth()
         .signInWithPhoneNumber(phoneNumber, appVerifier)
@@ -250,7 +253,7 @@ export function LandingPage() {
     let user = JSON.parse(localStorage.getItem("user_details"));
     if (user.number !== "") {
       configureCaptcha_login();
-      const phoneNumber = "+91" + number;
+      const phoneNumber =  number;
       const appVerifier = window.recaptchaVerifier;
       Firebase.auth()
         .signInWithPhoneNumber(phoneNumber, appVerifier)
@@ -307,19 +310,17 @@ export function LandingPage() {
                 />
               </div>
               <form>
+                
                 <div id="sign-in-button"></div>
-                <input
-                  type="number"
-                  name="Number"
-                  placeholder="Phone Number"
-                  className="Number_input"
-                  autoFocus={true}
-                  spellCheck={false}
-                  value={number}
-                  onChange={(e) => {
-                    setNumber(e.target.value);
-                  }}
-                />
+              
+          
+            <PhoneInput
+              defaultCountry="IN"
+              value={number}
+              onChange={setNumber}
+              placeholder = "Enter Your Number"
+              
+            />
                 <br />
                 <input
                   type="submit"
@@ -328,6 +329,7 @@ export function LandingPage() {
                   onClick={onLogInSubmit}
                 />
               </form>
+  
               <div className="foot_text">
                 <p>
                   By clicking on Login, I accept the terms & Conditions &
@@ -359,18 +361,16 @@ export function LandingPage() {
               </div>
               <form>
                 <div id="sign-in-button"></div>
-                <input
-                  type="number"
-                  name="Number"
-                  placeholder="Phone Number"
-                  className="Number_input_1"
+                <PhoneInput
+              defaultCountry="IN"
+              value={number}
+              onChange={setNumber}
+              className="Number_input_1"
                   autoFocus={true}
-                  spellCheck={false}
-                  value={number}
-                  onChange={(e) => {
-                    setNumber(e.target.value);
-                  }}
-                />
+              placeholder = "Enter Your Number"
+              
+            />
+                
                 <br />
                 <input
                   type="text"
@@ -500,6 +500,7 @@ export function LandingPage() {
             </div>
 
             <div className="hing">
+
               <div>
                 <button
                   id="login"
@@ -511,6 +512,7 @@ export function LandingPage() {
                   Login
                 </button>
               </div>
+
               <div>
                 <button
                   id="signup"
@@ -522,6 +524,19 @@ export function LandingPage() {
                   Sign up
                 </button>
               </div>
+
+              <div>
+                <button
+                  id="signup"
+                  onClick={() => {
+                    setLogin(false);
+                    setisDraweropen(true);
+                  }}
+                >
+                  Here
+                </button>
+              </div>
+              
             </div>
           </div>
           <Animation />

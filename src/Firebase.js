@@ -4,12 +4,13 @@ import 'firebase/compat/firestore';
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAqlZDRhrDUGEhr36YgnTAkbm50XL5yZ8E",
-  authDomain: "swiggy-b87f6.firebaseapp.com",
-  projectId: "swiggy-b87f6",
-  storageBucket: "swiggy-b87f6.appspot.com",
-  messagingSenderId: "502614518036",
-  appId: "1:502614518036:web:8afeacda6f1584b52ffa01"
+  apiKey: "AIzaSyBXezQrFTbLtQu_N1Xm3URLQCs8A3U5fG4",
+  authDomain: "restuarant-finder-9053d.firebaseapp.com",
+  projectId: "restuarant-finder-9053d",
+  storageBucket: "restuarant-finder-9053d.appspot.com",
+  messagingSenderId: "610148634534",
+  appId: "1:610148634534:web:5c4713681f3898f4740967",
+  measurementId: "G-75CHKNJ1E1"
 }
 
 // Initialize Firebase
